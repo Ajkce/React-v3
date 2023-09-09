@@ -12,6 +12,7 @@ console.log(import.meta.env.VITE_API_KEY);
 const Gallery = () => {
   const { searchContext } = useGlobalContext();
   const { isLoading, data, isError, error } = useQuery({
+    // /images/124 ["images", image.id]
     queryKey: ["images", searchContext],
     queryFn: async () => {
       const response = await axios.get(`${url}&query=${searchContext}`);

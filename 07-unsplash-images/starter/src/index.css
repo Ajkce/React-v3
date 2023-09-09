@@ -310,10 +310,10 @@ Toggle Container
 .toggle-container {
   width: var(--view-width);
   max-width: var(--max-width);
-  padding: 1rem 0;
+  padding: 1 rem 0;
   margin: 0 auto;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .dark-toggle {
@@ -329,6 +329,7 @@ Toggle Container
   font-size: 1.5rem;
   color: var(--textColor);
 }
+
 /* 
 ========
 Search Form
@@ -337,6 +338,7 @@ Search Form
 .title {
   color: var(--primary-500);
 }
+
 .search-form {
   width: var(--view-width);
   max-width: var(--fixed-width);
@@ -351,8 +353,6 @@ Search Form
   transition: var(--darkModeTransition);
   color: var(--textColor);
   border-radius: 0;
-
-  /* border-right: none; */
 }
 
 .search-form .btn {
@@ -363,12 +363,6 @@ Search Form
   color: var(--black);
 }
 
-/* 
-========
-Gallery
-========
-*/
-
 .image-container {
   width: var(--view-width);
   max-width: var(--max-width);
@@ -376,7 +370,6 @@ Gallery
   display: grid;
   gap: 2rem;
 }
-
 .image-container .img {
   height: 10rem;
 }
@@ -391,3 +384,8 @@ Gallery
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+/* 
+========
+Gallery
+========
+*/
