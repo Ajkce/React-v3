@@ -7,7 +7,6 @@ import ShoeCard from "../components/ShoeCard";
 import { useState } from "react";
 
 const Hero = () => {
-
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
 
   return (
@@ -20,7 +19,7 @@ const Hero = () => {
           Our summer collection
         </p>
         <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold dark:text-white">
-          <span className="xl:bg-white dark:xl:bg-slate-800 dark:text-white xl:whitespace-nowrap relative z-10 pr-10">
+          <span className="xl:bg-white dark:xl:bg-slate-900 dark:text-white xl:whitespace-nowrap relative z-10 pr-10">
             The new Arrival
           </span>
           <br />
@@ -56,7 +55,9 @@ const Hero = () => {
             <div className="" key={index}>
               <ShoeCard
                 imgURL={shoe}
-                changeBigShoeImage={(shoe) => {setBigShoeImg(shoe)}}
+                changeBigShoeImage={(shoe) => {
+                  setBigShoeImg(shoe);
+                }}
                 bigShoeImage={bigShoeImg}
               ></ShoeCard>
             </div>

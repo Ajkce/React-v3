@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .max-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .logo {
+    background: #cf0000;
+    background: linear-gradient(to bottom, #cf0000 18%, #ffbd2d 81%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
