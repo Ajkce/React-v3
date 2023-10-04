@@ -70,7 +70,7 @@ const router = createBrowserRouter([
   },
 ]);
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <QueryClientProvider client={query}>
       <RouterProvider router={router}></RouterProvider>

@@ -14,6 +14,10 @@ export default {
       "4xl": ["48px", "58px"],
       "8xl": ["96px", "106px"],
     },
+    fontFamily: {
+     
+      Itim: ['"Itim"', "cursive"],
+    },
     extend: {
       fontFamily: {
         palanquin: ["Palanquin", "sans-serif"],

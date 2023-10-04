@@ -1,12 +1,12 @@
-import React from "react";
-import { useLoaderData, Link, Navigate } from "react-router-dom";
+
+import { useLoaderData, Link} from "react-router-dom";
 import axios from "axios";
 import { useQuery } from "react-query";
 
 const singleUrl = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=";
 const itemUrl = "https://www.thecocktaildb.com/images/ingredients/";
 
-const searchSingleCocktail = (id) => {
+const searchSingleCocktail = (id : number) => {
   return {
     queryKey: ["search", "all", id],
     queryFn: async () => {
@@ -21,36 +21,9 @@ export const loader = async ({ params }) => {
 
   return { id };
 };
-interface singleDrink {
-  strDrink: string;
-  strDrinkThumb: string;
-  strAlcoholic: string;
-  strCategory: string;
-  strGlass: string;
-  strInstructions: string;
-  strIngredient1: string;
-  strIngredient2: string;
-  strIngredient3: string;
-  strIngredient4: string;
-  strIngredient5: string;
-  strIngredient6: string;
-  strIngredient7: string;
-  strIngredient8: string;
-  strIngredient9: string;
-  strIngredient10: string;
-  strIngredient11: string;
-  strIngredient12: string;
-  strIngredient13: string;
-  strIngredient14: string;
-  strIngredient15: string;
-}
 
-interface LoaderData {
-  data: {
-    drinks: singleDrink[];
-  };
-  id: string;
-}
+
+
 
 const Cocktail = () => {
   const { id } = useLoaderData() as unknown;
